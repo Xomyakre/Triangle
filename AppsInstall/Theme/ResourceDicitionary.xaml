@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Определение ресурса цвета --><!--
+    <SolidColorBrush x:Key="PopupBackgroundBrush" Color="Red" />
+
+    --><!-- Определение стиля для всплывающего окна --><!--
+    <Style x:Key="MyPopupStyle" TargetType="Popup">
+        <Setter Property="Background" Value="{StaticResource PopupBackgroundBrush}" />
+    </Style>
+
+    --><!-- Применение стиля к всплывающему окну --><!--
+    <Popup Style="{StaticResource MyPopupStyle}">
+        --><!-- Содержимое всплывающего окна --><!--
+    </Popup>-->
+
+
+
+
+
+
+</ResourceDictionary>

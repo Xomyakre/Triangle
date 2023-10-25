@@ -1,0 +1,225 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AppsInstall.MVVM.View"
+             xmlns:AppsInstall="clr-namespace:AppsInstall" x:Class="AppsInstall.MVVM.View.HomeView"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="770" d:DesignWidth="800">
+
+
+
+
+    <StackPanel>
+
+
+
+
+        <!--<TextBlock Text="Discover"
+                   Foreground="White"
+                   FontSize="28"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20"/>-->
+
+        <!--<StackPanel Orientation="Horizontal">
+            -->
+        <!--<Border Width="150"
+                    Height="150"
+                    CornerRadius="10">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#844eff" Offset="0.0"/>
+                        <GradientStop Color="#341c6b" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,400,200"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel>
+
+                        <TextBlock Text="Opera GX"
+                                   Foreground="beige"
+                                   FontSize="20"
+                                   Margin="30,90,10,0"/>
+
+
+
+                    </StackPanel>
+
+                    <Image Width="90"
+                           Height="90"
+                           Source="/Images/opera-gx.png"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Top"
+                           RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+
+                </Grid>
+            </Border>-->
+        <!--
+
+            <Border Width="150"
+                    Height="150"
+                    CornerRadius="10"
+                    Margin="45,0,0,0">
+                <Grid>
+
+                    <StackPanel>
+
+                        <TextBlock Text="Yandex"
+                                   Foreground="beige"
+                                   FontSize="20"
+                                   Margin="45,90,10,0"/>
+
+
+
+                    </StackPanel>
+
+                    <Image Width="90"
+                           Height="90"
+                           Source="/Images/ya.png"
+                           RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,50">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </Grid>
+
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#844eff" Offset="0.0"/>
+                        <GradientStop Color="#341c6b" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+            </Border>
+        </StackPanel>-->
+
+
+        
+           
+        
+
+        
+
+
+
+
+
+        <StackPanel Margin="0,0,0,-16">
+
+            <StackPanel>
+                <Grid Height="735">
+                    <!--<TextBlox x:Name="resultTextBlock" 
+Width="235"
+   VerticalContentAlignment="Center"
+   HorizontalAlignment="Left"
+   Margin="385,187,0,483"
+   Foreground="White" Text="ggg"/>-->
+
+                    <TextBlock x:Name="resultTextBlock"
+                               Width="520" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="370,194,0,0" Foreground="WhiteSmoke" Text="Введите стороны треугольника" FontSize="20"/>
+
+                    <!--<TextBox x:Name="sideATextBox"
+                        VerticalContentAlignment="Center"
+                        HorizontalAlignment="Left"
+                        Style="{StaticResource ModernTextbox}"
+                        Margin="171,344,0,345" Width="156" RenderTransformOrigin="0.84,0.499"/>
+
+                    <TextBox x:Name="sideBTextBox"
+                        VerticalContentAlignment="Center"
+                        HorizontalAlignment="Left"
+                        Margin="416,423,0,266" Width="156" 
+                        Style="{StaticResource ModernTextbox}"/>
+
+
+                    <TextBox x:Name="sideCTextBox"
+                        VerticalContentAlignment="Center"
+                        HorizontalAlignment="Left"
+                        Style="{StaticResource ModernTextbox}"
+                         Margin="634,423,0,266" Width="156"/>-->
+
+
+
+                    <TextBox x:Name="side1TextBox"
+VerticalContentAlignment="Center"
+HorizontalAlignment="Left"
+Margin="234,344,0,345" Width="156" RenderTransformOrigin="1,1" Background="#353340" Foreground="DarkGray"  />
+
+
+
+
+
+
+
+
+
+
+
+
+                    <TextBox x:Name="side2TextBox" 
+VerticalContentAlignment="Center"
+HorizontalAlignment="Left"
+Margin="432,344,0,345" Width="156" RenderTransformOrigin="0.533,0.611" Background="#353340" Foreground="DarkGray"  >
+
+                       
+
+                    </TextBox> 
+
+                    <TextBox x:Name="side3TextBox"
+VerticalContentAlignment="Center"
+HorizontalAlignment="Left"
+Margin="630,344,0,345" Width="156" RenderTransformOrigin="0.84,0.499" Background="#353340" Foreground="DarkGray" />
+
+
+
+
+                    <Button x:Name="Result" Content="Проверить"
+                        Padding="0,0,0,2" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="400,488,0,215" Width="220" Click="Result_Click"/>
+                </Grid>
+
+
+
+
+            </StackPanel>
+
+
+
+
+
+
+
+        </StackPanel>
+
+
+
+
+
+
+
+
+    </StackPanel>
+
+</UserControl>
